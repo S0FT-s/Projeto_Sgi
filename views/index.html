@@ -1,96 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Troti</title>
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="shortcut icon" type="image/x-icon" href="../images/logo/TROTI LOGO - SGI.png"/>
-</head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Troti</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../images/logo/TROTI LOGO - SGI.png"/>
+
+	<link rel="stylesheet" href="../css/styles.css">
+	<link rel="stylesheet" href="../css/layout.css">
+	<link rel="stylesheet" href="../css/index.css">
+</head> 
 <body>
+	<header class="nav">
+		<div class="container nav-inner">
+			<a class="brand" href="index.html" aria-label="Troti, home">
+				<img src="../images/logo/TROTI LOGO - SGI.png" alt="" width="40" height="40">
+				<span class="brand-name">Troti</span>
+			</a>
+			<nav aria-label="Main">
+			<a class="nav-link active" href="index.html" aria-current="page">Home</a>
+			<a class="nav-link" href="products.html">Products</a>
+			</nav>
+		</div>
+	</header>
 
-  <header class="nav">
-    <div class="container nav-inner">
-      <a class="brand" href="index.html" aria-label="Troti, home">
-        <img src="../images/logo/TROTI LOGO - SGI.png" alt="" width="40" height="40">
-        <span class="brand-name">Troti</span>
-      </a>
-      <nav aria-label="Main">
-        <a class="nav-link" href="index.html" aria-current="page">Products</a>
-      </nav>
-    </div>
-  </header>
+	<main>
+		<section class="hero">
+			<div class="container hero-inner">
+				<div class="hero-text">
+					<h1>Explore <span class="hl">every e-scooter</span> in 3D</h1>
+					<p>Rotate, zoom and customize before you buy</p>
+					<a class="btn" href="product.html">Explore Now!</a>
+				</div>
+				<!-- Replace this placeholder with a screenshot or a video of the 3D viewer -->
+				<div class="hero-media" role="img" aria-label="Preview of the 3D viewer">
+					<span>Screenshot or video of the 3D viewer</span>
+				</div>
+			</div>
+		</section>
 
-  <main>
-    <section class="hero">
-      <div class="container hero-inner">
-        <div class="hero-text">
-          <h1>Explore <span class="hl">every e-scooter</span> in 3D</h1>
-          <p>Rotate, zoom and customize before you buy</p>
-          <a class="btn" href="product.html">Explore Now!</a>
-        </div>
-        <!-- Replace this placeholder with a screenshot or a video of the 3D viewer -->
-        <div class="hero-media" role="img" aria-label="Preview of the 3D viewer">
-          <span>Screenshot or video of the 3D viewer</span>
-        </div>
-      </div>
-    </section>
+		<section class="products" aria-labelledby="products-title">
+			<div class="container">
+				<h2 id="products-title" class="products-title">Products</h2>
+			</div>
+			<div class="products-band">
+				<div class="container grid">
+					<article class="card">
+						<h3>Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h3>
+						<img src="../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp" alt="Segway-Ninebot E2 Pro E electric scooter" loading="lazy">
+						<p class="price">€249,99</p>
+						<ul class="specs">
+							<li>Range: 40 Km</li>
+							<li>Top Speed: 25km/h</li>
+							<li>Charging Time: 5 h</li>
+						</ul>
+						<a class="btn btn-block" href="product.html">Ver mais detalhes</a>
+					</article>
 
-    <section class="products" aria-labelledby="products-title">
-      <div class="container">
-        <h2 id="products-title" class="products-title">Products</h2>
-      </div>
-      <div class="products-band">
-        <div class="container grid">
+					<article class="card">
+						<h3>Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h3>
+						<img src="../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp" alt="Segway-Ninebot E2 Pro E electric scooter" loading="lazy">
+						<p class="price">€249,99</p>
+						<ul class="specs">
+							<li>Range: 40 Km</li>
+							<li>Top Speed: 25km/h</li>
+							<li>Charging Time: 5 h</li>
+						</ul>
+						<a class="btn btn-block" href="product.html">Ver mais detalhes</a>
+					</article>
 
-          <article class="card">
-            <h3>Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h3>
-            <img src="../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp" alt="Segway-Ninebot E2 Pro E electric scooter" loading="lazy">
-            <p class="price">€249,99</p>
-            <ul class="specs">
-              <li>Range: 40 Km</li>
-              <li>Top Speed: 25km/h</li>
-              <li>Charging Time: 5 h</li>
-            </ul>
-            <a class="btn btn-block" href="product.html">Ver mais detalhes</a>
-          </article>
+					<article class="card">
+						<h3>Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h3>
+						<img src="../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp" alt="Segway-Ninebot E2 Pro E electric scooter" loading="lazy">
+						<p class="price">€249,99</p>
+						<ul class="specs">
+							<li>Range: 40 Km</li>
+							<li>Top Speed: 25km/h</li>
+							<li>Charging Time: 5 h</li>
+						</ul>
+						<a class="btn btn-block" href="product.html">Ver mais detalhes</a>
+					</article>
+				</div>
+			</div>
+		</section>
+	</main>
 
-          <article class="card">
-            <h3>Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h3>
-            <img src="../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp" alt="Segway-Ninebot E2 Pro E electric scooter" loading="lazy">
-            <p class="price">€249,99</p>
-            <ul class="specs">
-              <li>Range: 40 Km</li>
-              <li>Top Speed: 25km/h</li>
-              <li>Charging Time: 5 h</li>
-            </ul>
-            <a class="btn btn-block" href="product.html">Ver mais detalhes</a>
-          </article>
-
-          <article class="card">
-            <h3>Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h3>
-            <img src="../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp" alt="Segway-Ninebot E2 Pro E electric scooter" loading="lazy">
-            <p class="price">€249,99</p>
-            <ul class="specs">
-              <li>Range: 40 Km</li>
-              <li>Top Speed: 25km/h</li>
-              <li>Charging Time: 5 h</li>
-            </ul>
-            <a class="btn btn-block" href="product.html">Ver mais detalhes</a>
-          </article>
-
-        </div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container footer-inner">
-      <img src="../images/logo/TROTI LOGO - SGI.png" alt="Troti" width="28" height="28">
-      <p class="footer-copy">Gabriel Tomás e Hugo Franco - Academic project, Universidade de Leiria e Oeste.</p>
-      <a class="nav-link" href="index.html">Products</a>
-    </div>
-  </footer>
-
+	<footer class="footer">
+		<div class="container footer-inner">
+			<img src="../images/logo/TROTI LOGO - SGI.png" alt="Troti" width="28" height="28">
+			<p class="footer-copy">Gabriel Tomás e Hugo Franco - Academic project, Universidade de Leiria e Oeste.</p>
+			<nav class="footer-nav" aria-label="Footer">
+				<a class="nav-link active" href="index.html" aria-current="page">Home</a>
+				<a class="nav-link" href="products.html">Products</a>
+			</nav>
+		</div>
+	</footer>
 </body>
 </html>
