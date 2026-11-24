@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Troti</title>
+	<link rel="shortcut icon" type="image/x-icon" href="../../images/logo/TROTI LOGO - SGI.png"/>
+
+	<link rel="stylesheet" href="../../css/styles.css">
+	<link rel="stylesheet" href="../../css/layout.css">
+    <link rel="stylesheet" href="../../css/product_detail.css">
+</head> 
+<body>
+	<header class="nav">
+		<div class="container nav-inner">
+			<a class="brand" href="index.html" aria-label="Troti, home">
+				<img src="../../images/logo/TROTI LOGO - SGI.png" alt="" width="40" height="40">
+				<span class="brand-name">Troti</span>
+			</a>
+			<nav aria-label="Main">
+			<a class="nav-link" href="../index.html">Home</a>
+			<a class="nav-link" href="../products.html">Products</a>
+			</nav>
+		</div>
+	</header>
+
+    <main class="container product-page">
+        <!-- Image gallery -->
+        <section class="gallery" aria-label="Product photos">
+        <button class="gallery-btn" id="prev" type="button" aria-label="Previous photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <img id="gallery-img" class="gallery-img"
+            src="../../images/SEGWAY-NINEBOT NINEBOT E2 Pro E/front.webp"
+            alt="Segway-Ninebot E2 Pro E electric scooter, photo 1">
+        <button class="gallery-btn" id="next" type="button" aria-label="Next photo">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+        </section>
+
+        <!-- Product info -->
+        <section class="info">
+        <h1 class="product-name">Electric Scooter SEGWAY-NINEBOT NINEBOT E2 Pro E</h1>
+
+        <p class="product-price">249,99 €</p>
+        <p class="small">Estimated Price</p>
+
+        <ul class="spec-grid">
+            <li class="spec"><p class="spec-main">Range: 40 Km</p></li>
+            <li class="spec"><p class="spec-main">Top Speed: 25 Km/h</p></li>
+            <li class="spec"><p class="spec-main">Weight: 18.8 kg</p></li>
+            <li class="spec">
+            <p class="spec-main">Motor Power: 750W</p>
+            <p class="small">Handles steep hills</p>
+            </li>
+        </ul>
+
+        <a class="btn btn-3d" href="viewer.html">See 3D Model of the E-Scooter</a>
+        </section>
+    </main>
+
+    <footer class="footer">
+		<div class="container footer-inner">
+			<img src="../../images/logo/TROTI LOGO - SGI.png" alt="Troti" width="28" height="28">
+			<p class="footer-copy">Gabriel Tomás e Hugo Franco - Academic project, Universidade de Leiria e Oeste.</p>
+			<nav class="footer-nav" aria-label="Footer">
+				<a class="nav-link" href="index.html">Home</a>
+				<a class="nav-link" href="products.html">Products</a>
+			</nav>
+		</div>
+	</footer>
+    
+    <script src="product.js"></script>
+</body>
+</html>
