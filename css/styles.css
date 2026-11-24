@@ -1,97 +1,143 @@
-@font-face {
-  font-family: "Space Grotesk";
-  src: url("../fonts/SpaceGrotesk-Variable.woff2");
-  font-weight: 300 700;
-  font-display: swap;
-}
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-Variable.woff2");
-  font-weight: 100 900;
-  font-display: swap;
-}
-
-:root {
-  --black: #000000;
-  --yellow: #FFCD05;
-  --yellow-hover: #E6B800;
-  --yellow-pressed: #CC9F00;
-  --bg: #FFFFFF;
-  --surface: #F5F5F4;
-  --border: #C4C4BF;
-  --border-light: #E2E2DE;
-  --text: #111111;
-  --text-secondary: #5C5C58;
-  --radius: 8px;
-  --nav-h: 64px;
+:root{
+	--black: #000000;
+	--yellow: #FFCD05;
+	--yellow-hover: #E6B800;
+	--yellow-pressed: #CC9F00;
+	--bg: #FFFFFF;
+	--surface: #F5F5F4;
+	--border: #C4C4BF;
+	--border-light: #E2E2DE;
+	--text: #111111;
+	--text-secondary: #5C5C58;
+	--radius: 8px;
+	--nav-h: 64px;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
-html { font-size: 100%; }
-body {
-  margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font: 400 1rem/1.5 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+/* Include padding and borders inside every element's total width and height */
+*, *::before, *::after{
+	box-sizing: border-box;
 }
-img { max-width: 100%; height: auto; display: block; }
-
-h1, h2, h3 {
-  font-family: "Space Grotesk", system-ui, sans-serif;
-  line-height: 1.2;
-  margin: 0;
+html{
+	font-size: 100%;
 }
-h1 { font-size: 2.5rem; font-weight: 700; }
-h2 { font-size: 1.75rem; font-weight: 600; }
-h3 { font-size: 1.25rem; font-weight: 600; }
+body{
+	margin: 0;
+	background: var(--bg);
+	color: var(--text);
+	font: 400 1rem/1.5 Inter, system-ui, -apple-system, "Segoe UI", sans-serif;
+}
 
-.container { width: 100%; max-width: 1280px; margin: 0 auto; padding: 0 24px; }
-a:focus-visible { outline: 2px solid var(--black); outline-offset: 2px; }
+img{
+	max-width: 100%;
+	height: auto;
+	display: block;
+}
+
+h1, h2, h3{
+	font-family: "Space Grotesk", system-ui, sans-serif;
+	line-height: 1.2;
+	margin: 0;
+}
+h1{
+	font-size: 2.5rem;
+	font-weight: 700;
+}
+h2{
+	font-size: 1.75rem;
+	font-weight: 600;
+}
+h3{
+	font-size: 1.25rem;
+	font-weight: 600;
+}
+
+.container{
+	width: 100%;
+	max-width: 1280px;
+	padding: 0 24px;
+	margin: 0 auto;
+}
+a:focus-visible{
+	outline: 2px solid var(--black);
+	outline-offset: 2px;
+}
 
 /* Buttons */
-.btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 40px;
-  padding: 0 20px;
-  background: var(--yellow);
-  color: var(--black);
-  border-radius: var(--radius);
-  font: 600 1rem/1 Inter, system-ui, sans-serif;
-  text-decoration: none;
+.btn{
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 40px;
+	padding: 0 20px;
+	background: var(--yellow);
+	color: var(--black);
+	border-radius: var(--radius);
+	font: 600 1rem/1 Inter, system-ui, sans-serif;
+	text-decoration: none;
 }
-.btn:hover { background: var(--yellow-hover); }
-.btn:active { background: var(--yellow-pressed); }
-.btn-block { display: flex; width: 100%; min-height: 44px; }
+.btn:hover{
+	background: var(--yellow-hover);
+}
+.btn:active{
+	background: var(--yellow-pressed);
+}
+.btn-block{
+	display: flex;
+	width: 100%;
+	min-height: 44px;
+}
 
 /* Product grid and card structure (the card LOOK is set in index.css / products.css) */
-.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
-.card { display: flex; flex-direction: column; border-radius: var(--radius); }
-.card .btn { margin-top: auto; }
-.price {
-  margin: 0 0 12px;
-  font: 600 1.25rem/1.2 "Space Grotesk", system-ui, sans-serif;
-  font-variant-numeric: tabular-nums;
+.grid{
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	gap: 24px;
 }
-.specs {
-  margin: 0 0 24px;
-  padding: 0;
-  list-style: none;
-  font-size: 0.875rem;
-  color: var(--text-secondary);
+.card{
+	display: flex;
+	flex-direction: column;
+	border-radius: var(--radius);
+}
+.card .btn{
+	margin-top: auto;
+}
+.price{
+	margin: 0 0 12px;
+	font: 600 1.25rem/1.2 "Space Grotesk", system-ui, sans-serif;
+	font-variant-numeric: tabular-nums;
+}
+.specs{
+	margin: 0 0 24px;
+	padding: 0;
+	list-style: none;
+	font-size: 0.875rem;
+	color: var(--text-secondary);
 }
 
-@media (max-width: 1023px) {
-  .grid { grid-template-columns: repeat(2, 1fr); }
-}
-@media (max-width: 767px) {
-  h1 { font-size: 2rem; }
-  h2 { font-size: 1.5rem; }
-  h3 { font-size: 1.125rem; }
-  .grid { grid-template-columns: 1fr; }
+@media (max-width: 1023px){
+	.grid{
+		grid-template-columns: repeat(2, 1fr);
+	}
 }
 
-@media (prefers-reduced-motion: reduce) {
-  * { transition: none !important; animation: none !important; }
+@media (max-width: 767px){
+	h1{
+		font-size: 2rem;
+	}
+	h2{
+		font-size: 1.5rem;
+	}
+	h3{
+		font-size: 1.125rem;
+	}
+	.grid{
+		grid-template-columns: 1fr;
+	}
+}
+
+@media (prefers-reduced-motion: reduce){
+	*{
+		transition: none !important;
+		animation: none !important;
+	}
 }
